@@ -1,0 +1,53 @@
+.center-table{
+  justify-content: center;
+  display: flex;
+}
+
+.modal.show {
+  display:block;
+}
+
+#tic-tac-toe
+{
+  border-collapse: collapse;
+}
+
+#tic-tac-toe td
+{
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  border: 1px solid black;
+  color: transparent;
+}
+
+#tic-tac-toe .piece-x
+{
+  background-image: url('../../assets/monkey-face_1f435.png');
+}
+
+#tic-tac-toe .piece-o
+{
+  background-image: url('../../assets/front-facing-baby-chick_1f425.png');
+}
+
+#tic-tac-toe button
+{
+  display: block;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+#tic-tac-toe button::-moz-focus-inner
+{
+  border: none;
+}
+
+#tic-tac-toe button:focus
+{
+  background: silver;
+}

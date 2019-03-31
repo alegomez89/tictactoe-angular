@@ -1,0 +1,10 @@
+.card-style{
+  width: 12rem;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.center-cards{
+  justify-content: center;
+  display: flex;
+}

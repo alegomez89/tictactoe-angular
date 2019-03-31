@@ -1,0 +1,57 @@
+<div class="text-center">
+  <table id="tic-tac-toe" class="center-table">
+    <tbody>
+    <tr>
+      <td>
+        <button id="00" data-row="0" data-column="0"></button>
+      </td>
+      <td>
+        <button id="01" data-row="0" data-column="1"></button>
+      </td>
+      <td>
+        <button id="02" data-row="0" data-column="2"></button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button id="10" data-row="1" data-column="0"></button>
+      </td>
+      <td>
+        <button id="11" data-row="1" data-column="1"></button>
+      </td>
+      <td>
+        <button id="12" data-row="1" data-column="2"></button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button id="20" data-row="2" data-column="0"></button>
+      </td>
+      <td>
+        <button id="21" data-row="2" data-column="1"></button>
+      </td>
+      <td>
+        <button id="22" data-row="2" data-column="2"></button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!--Modal-->
+<div class="modal" id="resultModal" role="dialog" aria-labelledby="resultModalLabel" [ngClass]="{'show': showResult}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">{{resultTitle}}</h3>
+      </div>
+      <div class="modal-body">
+        {{resultBody}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="newGame()">New Game</button>
+      </div>
+    </div>
+  </div>
+</div>

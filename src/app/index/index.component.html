@@ -1,0 +1,43 @@
+<div class="col-12 text-center">
+  <br>
+  <div class="col-12">
+    <button type="button" class="btn btn-outline-primary text-wrap" data-toggle="modal" data-target="#selectPlayer">
+      <h2>New Game</h2>
+    </button>
+  </div>
+  <br>
+  <div class="col-12">
+    <button type="button" class="btn btn-outline-primary text-wrap" (click)="continueGame()">
+      <h2>Continue Last Game</h2>
+    </button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="selectPlayer" tabindex="-1" role="dialog" aria-labelledby="selectPlayerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content" [ngStyle]="{'display':display}">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Select Your Chips</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row center-cards">
+          <div class="card card-style" data-dismiss="modal" (click)="newGame('monkeys')">
+            <img src="../../assets/monkey-face_1f435.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Monkeys</h5>
+              <p class="card-text">You start playing.</p>
+            </div>
+          </div>
+          <div class="card card-style" data-dismiss="modal" (click)="newGame('chick')">
+            <img src="../../assets/front-facing-baby-chick_1f425.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chicks</h5>
+              <p class="card-text">CPU plays first.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
