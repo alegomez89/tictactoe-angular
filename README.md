@@ -1,4 +1,4 @@
-# Tic Tac Toe Angular
+# Tic Tac Toe Angular (WIP)
 Angular frontend project to run with nodejs tic tac toe project.
 
 
